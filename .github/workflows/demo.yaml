@@ -27,4 +27,5 @@ jobs:
 
       - name: Build the Docker image
         run: |
-          docker build -t 758671678745.dkr.ecr.ap-south-1.amazonaws.com/demo-project:latest .
+        
+            docker build -t 758671678745.dkr.ecr.ap-south-1.amazonaws.com/demo-project:$GITHUB_REF_NAME-$GITHUB_SHA . 
